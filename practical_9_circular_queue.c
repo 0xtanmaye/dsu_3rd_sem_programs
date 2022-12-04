@@ -68,7 +68,7 @@ int main()
 	do
 	{
 		fflush(stdin);
-		printf("\nEnter the operation you want to perform(1-insert, 2-delete, 3-view, 4-exit):");
+		printf("\nEnter the operation you want to perform(1-enqueue, 2-dequeue, 3-display queue, 4-exit):");
 		scanf("%d", &choice);
 		
 		switch(choice)
