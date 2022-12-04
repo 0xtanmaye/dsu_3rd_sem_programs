@@ -92,7 +92,10 @@ int push(int val)
 	{
 		return;
 	}
-	top++;
-	stack[top]=val;
-	return stack[top];
+	else
+	{
+		top++;
+		stack[top]=val;
+		return stack[top];
+	}
 }
