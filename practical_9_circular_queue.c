@@ -56,7 +56,7 @@ void display_queue()
 	{
 		for(i=front;i<=rear;i++)
 			printf("%d\t", queue[i]);
-		printf("\nf=%d\t r=%d\n", front, rear);
+		
 		printf("\n");
 	}
 }
