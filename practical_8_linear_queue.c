@@ -32,7 +32,7 @@ int dequeue()
 	{
 		return;
 	}
-	else if(rear==SIZE-1 && front==rear)
+	else if(front==rear)
 	{
 		ele=queue[rear];
 		front=-1;
