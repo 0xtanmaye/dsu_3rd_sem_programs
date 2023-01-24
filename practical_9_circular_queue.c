@@ -6,15 +6,15 @@ int queue[SIZE], front=-1, rear=-1;
  
 int enqueue(int ele)
 {
-	if(front==-1 && rear==-1)
+	if((rear+1)%SIZE==front)
+	{
+		return;
+	}
+	else if(front==-1 && rear==-1)
 	{
 		front=0;
 		rear=(rear+1)%SIZE;
 		queue[rear]=ele;
-	}
-	else if((rear+1)%SIZE==front)
-	{
-		return;
 	}
 	else
 	{
