@@ -42,7 +42,7 @@ int main()
 	{
 		// lowr + highr may lead to overflow
 		// mid=(lowr+highr)/2; 
-		mid=(lowr+(high-low))/2; // Avoid overflow
+		mid=(lowr+(highr-lowr))/2; // Avoid overflow
 		
 		if(ele==n[mid])
 		{
