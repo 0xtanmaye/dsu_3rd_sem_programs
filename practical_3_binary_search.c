@@ -40,7 +40,9 @@ int main()
 	highr=size-1;
 	while(lowr<=highr)
 	{
-		mid=(lowr+highr)/2;
+		// lowr + highr may lead to overflow
+		// mid=(lowr+highr)/2; 
+		mid=(lowr+(high-low))/2; // Avoid overflow
 		
 		if(ele==n[mid])
 		{
