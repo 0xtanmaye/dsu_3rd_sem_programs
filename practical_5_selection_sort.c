@@ -38,6 +38,7 @@ int main()
 	{
 		printf("%d\t", n[i]);
 	}
+	printf("\n");
 	
 	return 0;
 }
