@@ -20,7 +20,7 @@ int main()
 		printf("%d\t", n[i]);
 	}
 	
-	for(i=0;i<size;i++)
+	for(i=0;i<(size-1);i++)
 	{
 		for(j=i+1;j<size;j++)
 		{
